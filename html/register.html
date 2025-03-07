@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" type="imagenes/png" href="/imagenes/favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="module" src="/js/firebase-config.js"></script>
+    <script type="module" src="/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Examen 1 Programacion IV</h2>
+        <p>Hecho por: Andrey Zamora P</p>
+    </header>
+    <h2>Registro</h2>
+    <form id="registerForm">
+        <input type="text" id="name" placeholder="Nombre Completo" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required minlength="8">
+        <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" required minlength="8">
+        <input type="date" id="fechaNacimiento" placeholder="fechaNacimiento" required>
+        <select id="team" required>
+            <option value="" disabled selected>Selecciona tu equipo</option>
+            <option value="team1">Saprissa</option>
+            <option value="team2">Heredia</option>
+            <option value="team3">Cartago</option>
+        </select>
+        <label>
+            <input type="checkbox" id="terminos" required>
+            Acepto los términos y condiciones
+        </label>
+        <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes cuenta? <a href="./index.html">Inicia sesión</a></p>
+    <footer>
+        <p>&copy;2025 Examen 1 Programacion IV Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

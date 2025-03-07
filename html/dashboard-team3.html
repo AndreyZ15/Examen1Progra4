@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartago</title>
+    <link rel="icon" type="imagenes/png" href="/imagenes/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/css/dashboard-styles.css">
+    <script type="module" src="/js/firebase-config.js"></script>
+    <script type="module" src="/js/dashboard.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Bienvenido al apartado del Club Sport Cartagines</h2>
+        <p>¡Vamos Brumosos!</p>
+        <button id="logout" class="logout-button">Cerrar sesión</button>
+    </header>
+    
+    <section id="team-info">
+        <h3>Logo</h3>
+        <img src="/imagenes/cartago/Escudo_del_Club_Sport_Cartaginés.png" alt="Logo Saprissa" class="team-logo">
+        <p>El Club Sport Cartagines es un club de fútbol costarricense, con sede en la ciudad de Cartago, Cartago.</p>
+    </section>
+    
+    <section id="matches">
+        <h3>Partidos</h3>
+        <ul id="matches-list"></ul>
+    </section>
+    
+    <section id="standings">
+        <h3>Tabla de posiciones</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>DG</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody id="standings-body">
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="top-scorers">
+        <h3>Goleadores</h3>
+        <ol id="top-scorers-list">
+            <li>
+                <span>Marcel Hernandez 110</span>
+                <img src="/imagenes/cartago/marcelhernandez.png" alt="Marcel Hernandez" class="scorer-img">
+            </li>
+            <li>
+                <span>Randall Brenes 96</span>
+                <img src="/imagenes/cartago/chiqui.png" alt="Randall Brenes" class="scorer-img">
+            </li>
+            <li>
+                <span>Allen Guevara 41</span>
+                <img src="/imagenes/cartago/Allen-Guevara.png" alt="Allen Guevara" class="scorer-img">
+            </li>
+        </ol>
+    </section>
+
+    </section>
+    <section id="legends">
+        <h3>Leyendas del equipo</h3>
+        <div class="legend">
+            <img src="/imagenes/cartago/claudio.png" alt="Leyenda 1" class="legend-img">
+            <h2>Claudio Ciccia</h2>
+            <p>La leyenda #1</p>
+        </div>
+        <div class="legend">
+            <img src="/imagenes/cartago/fello.png" alt="Leyenda 2" class="legend-img">
+            <h2>José Rafael "Fello" Meza Ivancovich</h2>
+            <p>La leyenda #2</p>
+        </div>
+        <div class="legend">
+            <img src="/imagenes/cartago/hakeem.png" alt="Leyenda 3" class="legend-img">
+            <h2>Jordan Hakeem Smith</h2>
+            <p>La leyenda #3</p>
+        </div>
+    </section>
+    <section id="historicas">
+        <h3>Imágenes historicas</h3>
+        <div class="historicas-imagenes">
+            <img src="/imagenes/cartago/1.png" alt="Imagen 1" class="historicas-img">
+            <img src="/imagenes/cartago/2.png" alt="Imagen 2" class="historicas-img">
+            <img src="/imagenes/cartago/3.png" alt="Imagen 3" class="historicas-img">
+        </div>
+    </section>
+    <section id="info">
+        <h3>Mayor Informacion</h3>
+        <p>Pagina web del Club Sport Cartagines: <a href="https://cscartagines.com/" class="button-link">Visitar página</a></p>
+    </section>
+    <section>
+        <footer>
+            <p>&copy;2025 Examen 1 Programacion IV Todos los derechos reservados</p>
+        </footer>
+    </section>
+</body>
+</html>
